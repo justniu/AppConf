@@ -39,5 +39,6 @@ gitlab_rails['gitlab_email_from'] = 'example@qq.com'
 ### 问题
 1.&nbsp;配置完成后第一次访问会默认进入重置密码界面，用户为root，但是会重置失败
 > 等待一段时间后问题自动消失了？？？
+
 2.&nbsp;在阿里云服务器配置gitlab服务是，需要注意配置安全组，打开端口
 

@@ -3,7 +3,8 @@
 1.&nbsp;在远程服务器启动jupyter notebook服务
 > jupyter notebook --no-browser --port=****
 2. &nbsp;在本机的Terminal中启动SSH
-> ssh -N -f -L localhost:8888:localhost:**** remote_user@remote_host
+> ssh -N -f -L localhost:8888:localhost:**** remote_user@remote_host  
+
 其中： -N 告诉SSH没有命令要被远程执行； -f 告诉SSH在后台执行； -L 是指定port forwarding的配置，远端端口是8889，本地的端口号的8888。remote_user@remote_host 用实际的远程帐户和远程地址替换  
 3.&nbsp;打开浏览器，输入地址：http://localhost:8888/ 
 

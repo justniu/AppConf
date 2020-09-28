@@ -31,3 +31,37 @@ ubuntu18.04默认安装8.x的版本，在使用webpack过程中各种loader提�
 3. 确认版本
 $ node -v
 v10.22.0
+
+## 安装golang及配置环境
+1.下载
+Golang官网下载地址：https://golang.org/dl/
+国内用户推荐：https://studygolang.com/dl
+2.解压
+> tar -C /usr/local -zxvf  go1.11.5.linux-amd64.tar.gz
+3.环境变量配置
+```
+# GOROOT配置
+# 习惯用vim，没有的话可以用命令`sudo apt-get install vim`安装一个
+vim /etc/profile
+# 在最后一行添加
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+# 保存退出后source一下（vim 的使用方法可以自己搜索一下）
+source /etc/profile
+```
+4.工作空间配置
+```
+# 编辑 ~/.bashrc 文件
+vim ~/.bashrc
+# 在最后一行添加下面这句。$HOME/go 为你工作空间的路径，你也可以换成你喜欢的路径
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+# 保存退出后source一下（vim 的使用方法可以自己搜索一下）
+source ~/.bashrc
+```
+5.工作空间目录结构
+go
+--pkg:编译包时，生成的.a文件的存放路径
+--bin:编译后可的执行文件的存放路径(go install)
+--src:源码路径，一般我们的工程就创建在src下面。
+

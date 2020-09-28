@@ -59,9 +59,8 @@ export PATH=$PATH:$GOPATH/bin
 # 保存退出后source一下（vim 的使用方法可以自己搜索一下）
 source ~/.bashrc
 ```
-5.工作空间目录结构  
-
-go
+5.工作空间目录结构    
+go  
 --pkg:编译包时，生成的.a文件的存放路径  
 --bin:编译后可的执行文件的存放路径(go install)  
 --src:源码路径，一般我们的工程就创建在src下面。  

@@ -65,3 +65,28 @@ go
 --bin:编译后可的执行文件的存放路径(go install)  
 --src:源码路径，一般我们的工程就创建在src下面。  
 
+## Postman
+下载安装包之后解压到指定位置
+1. 设置链接
+> sudo ln -s /usr/postman/Postman/Postman /usr/bin/postman #为可执行文件设置链接，就不用再专门设置环境变量
+
+2. 添加启动器应用图标  
+```
+//sudo vim /usr/share/applications/postman.desktop
+[Desktop Entry]
+ 
+Encoding=UTF-8
+ 
+Name=Postman
+ 
+Exec=postman
+ 
+Icon=/usr/postman/Postman/app/resources/app/assets/icon.png
+ 
+Terminal=false
+ 
+Type=Application
+ 
+Categories=Development;
+```
+

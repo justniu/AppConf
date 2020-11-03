@@ -1,3 +1,9 @@
+* [jupyter](#远程使用jupyter)
+* [nodejs](#nodejs)
+* [安装golang及配置环境](#安装golang及配置环境)
+* [Postman](#postman)
+* [mysql5.7安装](#mysql5.7安装)
+
 ## 远程使用jupyter 
 通过SSH远程使用jupyter notebook   
 1.&nbsp;在远程服务器启动jupyter notebook服务
@@ -90,3 +96,24 @@ Type=Application
 Categories=Development;
 ```
 
+## mysql5.7安装
+1. apt install
+```
+sudo apt-get install mysql-server
+```
+2. 登录修改密码
+```
+sudo mysql
+mysql>
+
+mysql> use mysql;
+mysql> select user,plugin,authentication_string from user;
+
+mysql> update user set plugin = 'mysql_native_password' where user='root';
+​
+mysql> update user set authentication_string=PASSWORD('admin') where user='root';
+```
+3. 重启服务
+```
+sudo service mysql restart
+```

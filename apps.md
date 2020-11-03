@@ -2,7 +2,7 @@
 * [nodejs](#nodejs)
 * [安装golang及配置环境](#安装golang及配置环境)
 * [Postman](#postman)
-* [mysql5.7安装](#mysql5.7安装)
+* [mysql5.7安装](#mysql57安装)
 
 ## 远程使用jupyter 
 通过SSH远程使用jupyter notebook   

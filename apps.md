@@ -117,3 +117,8 @@ mysql> update user set authentication_string=PASSWORD('admin') where user='root'
 ```
 sudo service mysql restart
 ```
+4. 更新
+目前ubuntu20自动安装的mysql版本是8.0+,修改秘密操作改变了
+```
+alter user 'root'@'localhost' identified with mysql_native_password by ' 新密码';
+```
